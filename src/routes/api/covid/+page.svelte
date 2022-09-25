@@ -44,7 +44,7 @@
 				{#each Object.entries(data) as [x, y]}
 					<tr>
 						<td>{x.toUpperCase()}</td>
-						<td>{y}</td>
+						<td>{y.toLocaleString("en-us")}</td>
 					</tr>
 				{:else}
 					<h3><strong>Loading data from API...</strong></h3>
